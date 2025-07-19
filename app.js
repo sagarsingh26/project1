@@ -21,8 +21,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js")
-const wrapAsync = require("./utils/wrapAsync.js");
-const listingController = require("./controllers/listings.js");
+
 
 
 
@@ -117,7 +116,6 @@ app.use((req , res , next) =>{
 
 
 
-app.get("/get", wrapAsync(listingController.index));
 
 
 app.use("/listings" , listingRouter);
