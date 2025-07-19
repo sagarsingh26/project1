@@ -82,11 +82,11 @@ const sessionOptions = {
 };
 
 
-// app.get("/" , (req , res) =>{
-//      res.send("hI , i am root" );
+ app.get("/" , (req , res) =>{
+      res.send("/listings" );
    
 
-// });
+ });
 
 
 
